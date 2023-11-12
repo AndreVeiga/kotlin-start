@@ -1,3 +1,5 @@
+package br.com.veigaandre.games.dtos
+
 import com.google.gson.annotations.SerializedName
 
 data class Game(
@@ -6,7 +8,7 @@ data class Game(
     @SerializedName("thumb")
     val thumb: String,
 ) {
-    val description = ""
+    var description: String? = null
 
     override fun toString(): String {
         return " Game: $title \n Description: $description \n Thumb: $thumb"
